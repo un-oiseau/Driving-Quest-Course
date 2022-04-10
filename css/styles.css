@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common styles */
+
+.back {
+    gap: 10px;
+}
+
+.back-step a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+}
+
+.title {
+    margin-bottom: 84px;
+}
+
+.btn {
+    border: none;
+}
+.btn:hover {
+    color: #fff;
+}
+
+.btn:focus,
+.btn:focus-visible,
+.btn:focus-within,
+.btn:visited,
+.btn:target {
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* Welcome Page */
+
+body:not(#welcome) {
+    background: url('../images/smiling-woman-with-car-key.svg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    max-height: 900px;
+} 
+body#welcome {
+    background: url('../images/welcome.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom 50%;
+    max-height: 900px;
+}
+
+
+.body-layout:not(#welcome) {
+    min-width: 100%;
+    min-height: 1000px;
+    background: linear-gradient(60.67deg, rgba(1, 195, 254, 0.85) 0%, rgba(0, 54, 162, 0.85) 100%);
+}  
+body#welcome .body-layout {
+    min-width: 100%;
+    min-height: 1000px;
+    background: linear-gradient(60.67deg, rgba(1, 195, 254, 0.85) 0%, rgba(0, 54, 162, 0.0935) 100%);
+}
+
+.top-logo {
+    margin: 0 0 197px;
+    padding-top: 80px;
+}
+
+.lang-cards {
+    gap: 30px;
+}
+
+.lng-card {
+    max-width: 360px;
+    min-height: 205px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.17);
+    border-radius: 40px;
+}
+
+.lng-card a {
+    display: block;
+    min-height: 100%;
+    text-decoration: none;
+}
+
+.lng-card .lng-body {
+    min-height: 205px;
+}
+
+.card .row {
+    flex-direction: row;
+}
+
+.language p {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+}
+
+.rec-btns {
+    gap: 14px;
+}
+
+.rec-btn-conf button {
+    padding: 18px 20px;
+}
+
+.rec-btns button {
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    max-width: 13.5rem;
+    width: 13.5rem;
+    padding: 20px 0;
+}
+
+.card-btn-grey {
+    background: #F2F2F2;
+    color: #333333;
+}
+
+.card-btn-grey:hover {
+    color: #333333;
+    background: #c2c0c0;
+}
+
+.card-btn-blue {
+    background: #1C5095;
+    color: #fff;
+}
+
+.card-btn-blue:hover {
+    background: #447ac1; 
+}
+
+/* Contact Info Page */
+
+.top-bar {
+    margin-left: 65px;
+}
+
+.form-btn {
+    background: #1E3A80;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25rem;
+    padding: 11px 60px;
+}
+
+.form-btn a {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.app-form {
+    width: 500px;
+}
+
+.app-form label {
+    margin-bottom: 18px;
+}
+.app-form input {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.17);
+    border-radius: 30px;
+    width: 100%;
+    padding: 22px 37px;
+    width: 25rem;
+}
+
+.form-btn:hover {
+    background-color: #1e3a80ad;
+}
+
+.app-form .form-group {
+    margin-bottom: 40px;
+}
+
+.form-group input {
+    position: relative;
+}
+
+.form-group input::placeholder {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(51, 51, 51, 0.25);
+    margin-bottom: 0;
+}
+
+.visit-purpose .form-btn {
+    background: #fff;
+}
+
+/* Visit Purpose */
+
+.form-btn-white {
+    min-width: 100%;
+    padding: 48px 66px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 22px 0;
+    font-weight: 600;
+    font-size: 28px;
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.17);
+    border-radius: 40px;
+    border: none;
+}
+
+.form-btn-white:hover {
+    background-color: #efefef;
+}
+
+.form-btn-white a,
+.form-btn-white:hover a {
+    color: #333333;
+}
+.app-form-next {
+    max-width: 720px;
+}
+
+/* Vial Education Options */
+
+.send-sms {
+    padding: 17px 54px 17px 90px;
+    background: #27ADE6;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.send-sms::before {
+    content: url('../images/sms-bubble.svg');
+    margin-right: 19px;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-37%);
+}
+
+.send-sms:hover {
+    color: #fff; 
+    background: #27ade6af;
+    transition: all .3s;
+}
+
+#ed-opt .top-bar,
+#conf-window .top-bar {
+    margin-left: 2.9rem;
+    margin-right: 2.9rem;
+}
+
+#ed-opt .check-chain {
+    margin-left: 8rem;
+}
+
+#ed-opt .card {
+    max-width: 607px;
+    padding: 1vw 1.6vw 4vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    border: none;
+}
+
+#ed-opt .card .card-header,
+#conf-window .card .card-header,
+#road-course .card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 0;
+}
+
+#ed-opt .card .list-group-item,
+#conf-window .card .list-group-item,
+#road-course .card .list-group-item {
+    border: none;
+    padding: 15px 0 15px 20px;
+}
+
+.ed-card-wrapper>div:not(:last-child),
+.conf-card-wrapper>div:not(:last-child){
+    margin-bottom: 22px;
+}
+
+.ed-card-wrapper .payment-frame,
+.conf-card-wrapper .payment-frame {
+    overflow: hidden;
+    max-width: 575px;
+}
+
+.ed-card-wrapper h5,
+.conf-card-wrapper h5 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    min-height: 70px;
+}
+
+.ed-card-wrapper .card-header p {
+    color: #929292;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.ed-card-wrapper .card .list-group-flush,
+.conf-card-wrapper .card .list-group-flush {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    margin-bottom: 100px;
+    padding-left: 1rem;
+}
+
+.ed-card-wrapper .card .list-group-flush li,
+.conf-card-wrapper .card .list-group-flush li::before {
+    position: relative;
+}
+
+.ed-card-wrapper .card .list-group-flush li::before,
+.conf-card-wrapper .card .list-group-flush li::before {
+    content:url('../images/check-green.svg');
+    position: absolute;
+    left: -16px;
+    top: calc(50% - 13px);
+    width: 25px;
+    height: 25px;
+}
+
+.card-price {
+    margin-bottom: 60px;
+}
+
+.card-price p,
+.card-price h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #333333;
+}
+
+.card-price h4 {
+    font-weight: 600;
+}
+
+.card-price p {
+    font-weight: 700;
+}
+
+.ed-card-wrapper .card .card-btn a {
+    padding: 17px 140px;
+    background: #1E3A80;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.ed-card-wrapper .card .card-btn a:hover,
+.conf-card-wrapper .card .card-btn a:hover {
+    background: #2b52b4; 
+    transition: all .5s;
+}
+
+/* Parent Taught Course Payment */
+
+iframe#payment {
+    min-width: 550px;       
+    max-height: 100vh;    
+    margin-left:-550px; 
+    overflow-y:hidden;
+    -webkit-resize:none;
+    -moz-resize:none;
+    resize:none;
+}
+
+iframe#payment .register-heading.heading-purchase {
+    display: none !important;
+}
+
+.register-purchase .row .div-section {
+    margin: 0;
+}
+
+/* Live Stream Ed Course */
+
+iframe#livestream {
+    min-width: 100%;       
+    min-height: 350px;    
+    overflow-y:hidden;
+    -webkit-resize:none;
+    -moz-resize:none;
+    resize:none;
+}
+
+/* Confirmation Screen */
+
+.back-home img {
+    width: 3vw;
+}
+
+.conf-card-wrapper .card-header p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    margin-top: 27px;
+    margin-bottom: 40px;
+}
+
+.conf-table tr td {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.conf-table tr td:nth-child(2) {
+    font-weight: 700;
+    justify-content: flex-end;
+}
+
+.conf-card .card-btn a {
+    position: relative;
+    padding: 13px 55px 13px 100px;
+    background: #1E3A80;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.conf-card .card-btn a::before {
+    content: url('../images/confirmation-send-icon.svg');
+    margin-right: 20px;
+    position: absolute;
+    left: 3.5rem;
+    top: 50%;
+    transform: translateY(-37%);
+
+}
+
+.conf-card .list-plain {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+
+#conf-window .card {
+    max-width: 607px;
+    padding: 38px 36px 78px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    border: none;
+}
+
+/* Road Driving Course */
+
+#road-course p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+#road-course .price-1 {
+    padding: 11px 0 48px;
+    margin-left: calc(50% - 140px);
+}
+
+#road-course .text-2 {
+    margin-bottom: 21px;
+}
+
+#road-course .price-2 {
+    padding: 8px 0 33px;
+    margin-left: calc(50% - 140px);
+    margin-right: calc(50% - 140px);
+}
+
+#road-course .card {
+    max-width: 607px;
+    padding: 38px 36px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    border: none;
+}
+
+#road-course .form-btn {
+    margin: 57px auto 77px;
+}

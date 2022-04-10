@@ -1,0 +1,93 @@
+@media screen and (max-width: 1280px) {
+    body {
+        background-position: center right 30%;
+    }
+
+    .ed-card-wrapper.row {
+        --bs-gutter-x: 0.5rem;
+    }
+
+    .ed-card-wrapper .card .list-group-flush {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+    #road-course .card {
+        min-height: 750px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #ed-opt .check-chain {
+        margin-left: 0;
+    }
+
+    .check-chain img {
+        width: 35vw;
+    }
+
+    .send-sms {
+        padding: 1.5vw 11vw;
+    }
+
+    .back-step a {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #ed-opt .card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .conf-card-wrapper.row>*{
+        padding-left: calc(var(--bs-gutter-x) * 2.5);
+    }
+}
+.ed-card-wrapper.row>* {
+    padding-left: calc(var(--bs-gutter-x) * 2.5);
+}
+
+@media screen and (max-width: 768px) {
+    .ed-card-wrapper.row>* {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    #ed-opt .top-bar {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .send-sms::before {
+        left: 1rem;
+    }
+
+    .conf-top-bar>:first-child {
+        order: 2;
+    }
+
+    .conf-top-bar>:nth-child(2) {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .body-layout:not(#welcome) {
+        min-width: 33rem;
+    }
+    .top-bar {
+        margin-left: 45px;
+    }
+    .top-bar.row>* {
+        width: auto;
+    }
+    .top-bar.row>:first-child {
+        width: 20%;
+    }
+    top-bar.row>:nth-child(2) {
+        width: 80%;
+    }
+}
+
