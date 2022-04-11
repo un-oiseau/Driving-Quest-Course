@@ -26,9 +26,11 @@
     .check-chain img {
         width: 35vw;
     }
-
+    .send-sms::before {
+        left: 14px;
+    }
     .send-sms {
-        padding: 1.5vw 11vw;
+        padding: 17px 46px;
     }
 
     .back-step a {
@@ -40,6 +42,10 @@
 @media screen and (max-width: 992px) {
     #ed-opt .card {
         max-width: 100%;
+    }
+
+    #road-course .top-bar.row>* {
+        width: 50%;
     }
 }
 
