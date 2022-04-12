@@ -34,6 +34,10 @@ h4 {
 
 .title {
     margin-bottom: 84px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
 }
 
 .btn {
@@ -53,6 +57,14 @@ h4 {
     border: none;
 }
 
+.form-group label {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
 
 /* Welcome Page */
 
@@ -72,7 +84,7 @@ body#welcome {
 
 .body-layout:not(#welcome) {
     min-width: 100%;
-    min-height: 1000px;
+    min-height: 100vh;
     background: linear-gradient(60.67deg, rgba(1, 195, 254, 0.85) 0%, rgba(0, 54, 162, 0.85) 100%);
 }  
 body#welcome .body-layout {
@@ -190,8 +202,8 @@ body#welcome .body-layout {
     line-height: 41px;
     text-align: center;
     text-transform: uppercase;
-    width: 25rem;
     padding: 11px 60px;
+    width: 100%;
 }
 
 .form-btn a {
@@ -202,9 +214,9 @@ body#welcome .body-layout {
     text-align: center;
     text-transform: uppercase;
 }
-.app-form {
-    width: 500px;
-}
+/* .app-form {
+    max-width: 500px;
+} */
 
 .app-form label {
     margin-bottom: 18px;
@@ -213,9 +225,9 @@ body#welcome .body-layout {
     background: #FFFFFF;
     box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.17);
     border-radius: 30px;
-    width: 100%;
+    /* width: 100%; */
     padding: 22px 37px;
-    width: 25rem;
+    /* width: 25rem; */
 }
 
 .form-btn:hover {
@@ -614,6 +626,7 @@ iframe#livestream {
 
 #road-course .form-btn {
     margin: 57px auto 77px;
+    max-width: 382px;
 }
 
 iframe#road-payment {
