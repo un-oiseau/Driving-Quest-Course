@@ -34,6 +34,8 @@ $(function(){
         $el3.css("background", originalColor3);
       }, x);
     });
+
+    
   });
 
 

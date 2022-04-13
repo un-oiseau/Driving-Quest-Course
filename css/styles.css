@@ -600,6 +600,13 @@ iframe#livestream {
     color: #333333;
 }
 
+#road-course .card-price p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #333333;
+}
+
 #road-course .price-1 {
     padding: 11px 0 48px;
     margin-left: calc(50% - 140px);
