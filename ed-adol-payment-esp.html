@@ -53,11 +53,145 @@
                 <div class="col-lg-6">
                     <div class="card payment-frame">
                         <h5>Forma de pago</h5>
-                        <iframe id="payment" scrolling="no"
-                            src="https://course.drivingquest.com/api/register/purchase/adult-spanish-course?source=drivingquest-express"
-                            title="Parent Taught Teen Driving Payment" height="670" frameborder="0">
-                        </iframe>
+                        <div class="div-section">
+                            <div class="section-heading">Payment </div>
+                                <ul class="nav nav-tabs">
+                                    <li class="card active">
+                                        <a data-toggle="tab" href="#default" title="Credit/Debit Card" aria-expanded="true"><i class="fa fa-credit-card" aria-hidden="true"></i>Credit Card</a>
+                                    </li>
+                                    <li class="paypal"><a data-toggle="tab" href="#paypal" title="Paypal" aria-expanded="false">Paypal</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                <div id="default" class="tab-pane fade active in">
+                                    <form class="form-section purchase-form" method="POST" id="payment-form" action="https://course.drivingquest.com/api/register/create">
+                                        <input type="hidden" name="_token" value="NOjYcOfI88CdzugEYPlbncj638I3gp7o2nyercC7">                <div class="section-body">
+                                            <span class="payment-errors"></span>
+                                                                                                            <input type="hidden" name="coupon_code" value="">
+                                            <input type="hidden" name="courseid" value="5">
+                                            <input type="hidden" name="source" value="1">
+                                            <input type="hidden" name="group_id" value="">
+                                            <input type="hidden" name="description" value="Parent Taught Drivers Ed">
+                                            <div class="bg form-item ">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <input type="text" name="name" value="" placeholder="Cardholder Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                                                    </div>
+                                                                    <div class="bg form-item card-item">
+                                                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                                    <input type="text" class="cardnumberinput" size="19" maxlength="19" data-stripe="number" name="cardnumber" placeholder="Credit Card Number" value="">
+                                                                            </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="bg num-inline num-item form-item ">
+                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                            <input type="text" name="cardexpmonth" size="2" maxlength="2" class="card-date" value="" placeholder="MM">
+                                                            <span class="divider">/</span>
+                                                            <input type="text" name="cardexpyear" size="2" maxlength="2" data-stripe="exp_year" id="cyear" value="" placeholder="YY">
+                                                            <div class="num-help">
+                                                                                                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="bg form-item card-item">
+                                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                                            <input type="text" class="cardcvvinput" size="4" maxlength="4" data-stripe="cvc" placeholder="CVC" name="cardcvc" value="">
+                                                                                            </div>
+                                                    </div>
+                                                </div>
+                                                                <div class="place">
+                                                <div class="form-item ">
+                                                    <input type="text" name="email" placeholder="Email Address" value="">
+                                                                            </div>
+                                                <div class="form-item ">
+                                                    <input type="text" name="email_confirmation" placeholder="Confirm Email Address" value="">
+                                                                            </div>
+                                                <div class="form-item ">
+                                                    <input id="password" type="password" placeholder="Create Password" name="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                                                            </div>
+                                                <div class="form-item ">
+                                                    <input id="password-confirm" type="password" placeholder="Confirm Password" name="password_confirmation" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                                                                            </div>
+                                            </div>
+                                            <div class="form-item checkbox ">
+                                                <label for="agreement">
+                                                    <input type="checkbox" name="agreement" value="1">
+                                                    By checking this box, I agree that I am at least 18 years of age and therefore qualify for this online course.
+                                                </label>
+                                                                    </div>
+                                        </div>
+                                        <div class="text-center button col-sm-12">
+                                            <button class="btn green submit" id="btn-pay" type="submit">PURCHASE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                            <div id="paypal" class="tab-pane fade">
+                                        <img alt="DrivingQuest Logo" class="image" src="https://course.drivingquest.com/images/icons/paypal.png">
+                                        <form class="form-section purchase-form" method="POST" id="payment-formpaypal" action="https://course.drivingquest.com/api/register/successregister">
+                                            <input type="hidden" name="_token" value="NOjYcOfI88CdzugEYPlbncj638I3gp7o2nyercC7">                    <input type="hidden" name="source" value="1">
+                                            <input type="hidden" name="group_id" value="">
+                                            <input type="hidden" name="coupon_code" value="">
+                                            <div class="section-body">
+                                                <input type="hidden" name="courseidpaypal" value="5">
+                                                <div class="form-item ">
+                                                    <input type="text" name="namepaypal" value="" placeholder="Student Name">
+                                                    <span class="help-block">
+                                                        <strong class="namepaypal-error"></strong>
+                                                    </span>
+                                                </div>
+                                                <div class="form-item ">
+                                                    <input type="text" id="emailpaypal" name="emailpaypal" placeholder="PayPal Email address" value="">
+                                                    <span class="help-block">
+                                                        <strong class="emailpaypal-error"></strong>
+                                                    </span>
+                                                </div>
+                                                <div class="form-item ">
+                                                    <input id="passwordpaypal" type="password" placeholder="Create Password" name="passwordpaypal">
+                                                    <span class="help-block">
+                                                        <strong class="passwordpaypal-error"></strong>
+                                                    </span>
+                                                </div>
+                                                <div class="form-item ">
+                                                    <input id="password-confirmpaypal" type="password" placeholder="Confirm Password" name="password_confirmationpaypal">
+                                                    <span class="help-block">
+                                                        <strong class="password_confirmationpaypal-error"></strong>
+                                                    </span>
+                                                </div>
+                                                <div class="form-item checkbox ">
+                                                    <label for="agreement">
+                                                        <input type="checkbox" name="agreementpaypal" value="1">
+                                                        By checking this box, I agree that I am at least 18 years of age and therefore qualify for this online course.
+                                                    </label>
+                                                    <span class="help-block">
+                                                        <strong class="agreementpaypal-error"></strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button class="btn orange submit" id="pay-button" type="submit">Check out with<img alt="DrivingQuest Logo" src="https://course.drivingquest.com/images/icons/paybtn.png"></button>
+                                            </div>
+                                        </form>
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="paypal-form form-inline" role="form" id="pay-form">
+                                            <input type="hidden" name="cmd" value="_xclick">
+                                            <input type="hidden" name="return" value="https://course.drivingquest.com/api/register/successpay">
+                                            <input type="hidden" name="business" value="xavier@drivingquest.com">
+                                            <input type="hidden" name="no_shipping" value="0">
+                                            <input type="hidden" name="no_note" value="6">
+                                            <input type="hidden" name="lc" value="US">
+                                            <input type="hidden" name="bn" value="PP-BuyNowBF">
+                                            <input type="hidden" id="coursetitle" value="PTDE">
+                                            <input type="hidden" id="apptitle" value="DrivingQuest">
+                                            <input type="hidden" name="item_name" id="item-name" value="PTDE-DrivingQuest">
+                                            <input type="hidden" id="amountpaypal" name="amount" value="75">
+                                            <input type="hidden" id="currency" name="currency_code" value="USD">
+                                            <input type="hidden" name="email">
+                                        </form>
+                                    </div>
+                                    </div>
+                        </div>
                     </div>
+                        <!-- <iframe id="payment" scrolling="no"
+                        src="https://course.drivingquest.com/api/register/purchase/adult-spanish-course?source=drivingquest-express"
+                        title="Parent Taught Teen Driving Payment" height="670" frameborder="0">
+                        </iframe> -->
                 </div>
             </div>
         </div>

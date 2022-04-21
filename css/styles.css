@@ -314,6 +314,7 @@ body#welcome .body-layout {
 /* Visit Purpose */
 
 .form-btn-white {
+    display: inline-block;
     min-width: 100%;
     padding: 48px 66px;
     font-weight: 600;
@@ -327,14 +328,14 @@ body#welcome .body-layout {
     box-shadow: 0px 4px 8px 7px rgba(0, 0, 0, 0.17);
     border-radius: 40px;
     border: none;
+    color: #333333;
 }
 
 .form-btn-white:hover {
     background-color: #efefef;
 }
 
-.form-btn-white a,
-.form-btn-white:hover a {
+.form-btn-white:hover {
     color: #333333;
 }
 .app-form-next {
@@ -654,4 +655,82 @@ iframe#road-payment {
 
 #iframe#road-payment #document body .register-ddc {
     background: #fff;
+}
+
+
+
+
+
+
+
+
+/* Payment Card */
+
+.purchase-form {
+    font-size: 26px;
+    line-height: 35px;
+    color: rgba(51, 51, 51, 0.25);
+}
+
+.purchase-form input {
+    outline: none;
+}
+.purchase-form input:not(.card-date),
+.pay-card-details {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 7px 30px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 6px 0;
+}
+
+.pay-card-wrapper {
+    gap: 15px;
+}
+
+/* @media screen and (max-width: 992px) {
+    .purchase-form .row>* {
+        padding-right: 0;
+    }
+} */
+
+.purchase-form input[type="checkbox"] {
+    min-width: initial;
+}
+
+.pay-card-details input {
+    border: none;
+}
+
+.purchase-form input.card-date {
+
+}
+
+.purchase-form .card-item {
+
+}
+.purchase-form .pay-input {
+
+}
+
+.purchase-form input::placeholder {
+    font-size: 26px;
+    line-height: 35px;
+    color: rgba(51, 51, 51, 0.25);
+}
+.purchase-form .card-date {
+
+}
+.nav.nav-tabs {
+    gap: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: rgba(51, 51, 51, 0.3);
+}
+.nav.nav-tabs li:active {
+    color: #27A9E1;
 }
